@@ -12,3 +12,4 @@ This is a simple application built with JavaFX and SQLite.
 
 - [JavaFX](https://openjfx.io/) - The GUI framework used
 - [SQLite](https://www.sqlite.org/index.html) - Database
+- Reference: https://www.youtube.com/watch?v=XlAzQ170kzM
