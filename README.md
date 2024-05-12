@@ -4,11 +4,9 @@ This is a simple application built with JavaFX and SQLite.
 
 ## Screenshots
 
-(Include your screenshots here. You can add images by using the following syntax)
-
-![Alt text](url-to-image)
-
-Replace `url-to-image` with the actual URL of your image. If the image is in your repository, you can use a relative path.
+![Home Page](Screenshots/Screenshot 2024-05-12 162154.png)
+![Favourites Page](Screenshots/Screenshot 2024-05-12 162208.png)
+![Search](Screenshots/Screenshot 2024-05-12 162226.png)
 
 ## Built With
 
