@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.pokedex.AppData">
+   <children>
+      <BorderPane layoutX="130.0" layoutY="115.0" prefHeight="173.0" prefWidth="244.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="CENTER_LEFT" prefHeight="810.0" prefWidth="423.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="115.0" prefWidth="423.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="341.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pokedex.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="favBtn" mnemonicParsing="false" onAction="#FavPokemons" styleClass="dashBtns" stylesheets="@styles.css" text="FAVOURITES" />
+                        <Button fx:id="prevBtn" mnemonicParsing="false" onAction="#prevClick" prefHeight="33.0" prefWidth="40.0" styleClass="dashBtns" stylesheets="@styles.css" text="&lt;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#nextClick" prefHeight="33.0" prefWidth="40.0" styleClass="dashBtns" stylesheets="@styles.css" text="&gt;">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <ImageView fitHeight="557.0" fitWidth="405.0" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="80.0" />
+                     </VBox.margin>
+                     <image>
+                        <Image url="@e0b8ade0b8b0e0b899e0b8b4e0b980e0b8a1e0b8b0e0b982e0b89be0b980e0b881e0b8a1e0b8ade0b899e0b983e0b8abe0b8a1e0b988e0b89ee0b8a3e0b989e0b8ad-1.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="118.0" prefWidth="872.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#homeClick" prefHeight="33.0" prefWidth="101.0" styleClass="dashBtns" stylesheets="@styles.css" text="HOME">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                        <TextField fx:id="searchBar" prefHeight="33.0" prefWidth="481.0" promptText="Search" stylesheets="@styles.css">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#Search" styleClass="dashBtns" stylesheets="@styles.css" text="SEARCH">
+                           <HBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="693.0" prefWidth="872.0">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <ScrollPane fx:id="scrollpane" prefHeight="691.0" prefWidth="960.0" stylesheets="@styles.css">
+                           <content>
+                              <GridPane fx:id="gridpane" prefHeight="0.0" prefWidth="0.0">
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
